@@ -1,0 +1,2 @@
+AND =  both is true
+OR = at least one true
