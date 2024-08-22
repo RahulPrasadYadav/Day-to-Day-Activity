@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after psedudo selectors</title>
+</head>
+  <style>
+       body{
+          margin: 0;
+          padding: 0;
+           
+          background-color: black;
+          color: white;
+           
+       }
+       header::before{
+        background: url('https://images.unsplash.com/photo-1705900266125-3b999d5a5c62?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          opacity: 0.5;
+       }
+       section{
+          display: flex;
+          flex-direction: column;
+          padding: 2px 240px;
+          align-items: center;
+          /* border: 2px solid red; */
+          height: 400px;
+          justify-content: center;
+           
+
+
+       }
+       .navigation{
+          font-size: 20px;
+          display: flex;
+
+       }
+       li{
+        
+          list-style: none;
+          padding: 2px 20px;
+
+       }
+       /* section::before{
+          content: "this is content";   
+       } */
+          h3{
+             font-size: 4rem;
+              
+          }
+          p{
+              text-align: center;
+          }
+  </style>
+   
+<body>
+    
+    <header>
+          <nav class="navbar">
+                <ul class="navigation">
+                       <li class="itme">Home </li>
+                       <li class="itme">about</li>
+                       <li class="itme">servies</li>
+                       <li class="itme">contect</li>
+
+                </ul>
+            </nav>
+           
+    </header>
+    <section>
+        <h3>welcome to coding world </h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt placeat distinctio reprehenderit illum voluptates corrupti incidunt laborum culpa, architecto rerum ad blanditiis consequatur assumenda. Consequuntur libero eos itaque ut, deleniti, non quos mollitia excepturi quidem esse nesciunt, perspiciatis laudantium odio?</p>
+  </section>
+  <!-- <hr>   -->
+</body>
+</html>

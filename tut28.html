@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+</head>
+<style>
+    .container{
+          height: 534px;
+          width: 100%;
+          border: 2px solid red;
+          display: flex;
+
+          /* flex  properties  to flex conatiner */
+           /* defoult flex is row */
+          /* flex-direction: row; */
+          /* flex-direction: column;
+          flex-direction: row-reverse; */
+          /* flex-wrap: wrap; */
+          /* justify-content: center;
+          justify-content: space-between;
+          justify-content: space-evenly;
+          align-items: center; */
+          /* align-items: flex-end; */
+          /* align-items: flex-start; */
+
+
+
+    }
+    .item{
+        width: 200px;
+        height: 200px;
+         background-color: tomato;
+         border: 2px solid green;
+         margin: 10px;
+         padding: 3px;
+
+    }
+    #item-1{
+        /* higher the order later ot show up in the container */
+                /* order: 2; */
+
+                flex-grow: 3;
+
+    }
+    #item-2{
+          flex-grow: 4;
+    }
+    #item-3{
+        order: 40;
+    }
+   
+</style>
+<body>
+  <h1>this is flex box tutorial</h1>
+     <div class="container">
+          <div class="item" id="item-1">first box </div>
+          <div class="item" id="item-2">second box</div>
+          <div class="item" id="item-3">third box</div>
+          <!-- <div class="item" id="item-4">forth box</div>
+          <div class="item" id="item-5">five box</div>
+          <div class="item" id="item-6">six box</div> -->
+     </div>
+</body>
+</html> 
